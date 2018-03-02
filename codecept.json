@@ -1,0 +1,21 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://ico-staging.dubtokens.com",
+      "browser": "chrome"
+    },
+	"REST": {
+      "endpoint": "https://api-staging.dubtokens.com",
+      "_endpoint-options": "development - https://api-dev.dubtokens.com, staging - https://api-staging.dubtokens.com, prod - https://api.dubtokens.com"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "Documents"
+}
